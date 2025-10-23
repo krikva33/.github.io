@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLÅTUR 2025 - Rome</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '✈️';
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 40px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        header::after {
+            content: '🇮🇹';
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 40px;
+            animation: float 3s ease-in-out infinite 1.5s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #e63946;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .dates {
+            font-size: 1.3em;
+            color: #457b9d;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #f4a261;
+            font-size: 1.1em;
+            margin-top: 15px;
+            font-weight: 500;
+        }
+
+        .day-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .day-section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #e63946;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #f4a261;
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .activity {
+            margin: 15px 0;
+            padding: 12px;
+            background: linear-gradient(to right, #ffeaa7, #dfe6e9);
+            border-radius: 10px;
+            border-left: 5px solid #e63946;
+        }
+
+        .time {
+            font-weight: 700;
+            color: #457b9d;
+            font-size: 1.1em;
+        }
+
+        .description {
+            color: #2d3436;
+            margin-top: 5px;
+            font-weight: 500;
+        }
+
+        .spotify-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+
+        .spotify-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .note {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 10px;
+            font-weight: 600;
+            color: #856404;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            font-size: 1.2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-weight: 600;
+        }
+
+        .emoji {
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>BLÅTUR 2025</h1>
+            <div class="dates">24.10.25 - 26.10.25</div>
+            <div>🛵 Roma • Vino • Pizza • Amore 🍕</div>
+            <div class="quote">"This is what dreams are made of!"</div>
+        </header>
+
+        <div class="spotify-section">
+            <h2>🎵 Our Rome Playlist</h2>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1arrHOzQ9pjmXKDAiv4Ziq?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div class="day-section">
+            <h2>FREDAG <span class="emoji">🌟</span></h2>
+            <div class="activity">
+                <div class="time">05:30</div>
+                <div class="description">Oppmore OSL</div>
+            </div>
+            <div class="activity">
+                <div class="time">10:10</div>
+                <div class="description">Ankomst i Roma og transport til Airbnb</div>
+            </div>
+            <div class="activity">
+                <div class="time">12:30</div>
+                <div class="description">Lunsj Panella</div>
+            </div>
+            <div class="activity">
+                <div class="time">13:00</div>
+                <div class="description">Sightseeing, shopping & fritid</div>
+            </div>
+            <div class="activity">
+                <div class="time">16:30</div>
+                <div class="description">Hjem og fikse oss</div>
+            </div>
+            <div class="activity">
+                <div class="time">18:40-21:45</div>
+                <div class="description">Kokkekurs med ubegrænset vin ;)</div>
+            </div>
+        </div>
+
+        <div class="day-section">
+            <h2>LØRDAG <span class="emoji">🌹</span></h2>
+            <div class="activity">
+                <div class="time">10:00</div>
+                <div class="description">Frokost ved Colosseum</div>
+            </div>
+            <div class="activity">
+                <div class="time">12:00 - 14:00</div>
+                <div class="description">Guidet Vespa-tur med fotografering</div>
+            </div>
+            <div class="activity">
+                <div class="time">14:00</div>
+                <div class="description">Fritid - lunsj, vin & shopping</div>
+            </div>
+            <div class="activity">
+                <div class="time">18:00</div>
+                <div class="description">Hjem og get dressed</div>
+            </div>
+            <div class="activity">
+                <div class="time">20:00</div>
+                <div class="description">Dinner and drinks</div>
+            </div>
+            <div class="activity">
+                <div class="time">22:00</div>
+                <div class="description">Surprise</div>
+            </div>
+            <div class="activity">
+                <div class="time">23:00</div>
+                <div class="description">Party party</div>
+            </div>
+        </div>
+
+        <div class="day-section">
+            <h2>SØNDAG <span class="emoji">☀️</span></h2>
+            <div class="activity">
+                <div class="time">09:00</div>
+                <div class="description">Uber til flyplassen</div>
+            </div>
+            <div class="activity">
+                <div class="time">10:30</div>
+                <div class="description">Avgang OSL</div>
+            </div>
+            <div class="activity">
+                <div class="time">14:00</div>
+                <div class="description">Arriverderei <3</div>
+            </div>
+            <div class="note">
+                <strong>NB!!!</strong><br>
+                Tidlig avreise skal ikke påvirke kvelden før,<br>
+                we only live once
+            </div>
+        </div>
+
+        <footer>
+            <div>🍝 Ciao Bella! 🍷</div>
+            <div style="margin-top: 10px; font-size: 0.9em;">What would Lizzie do? She'd go to Rome! ✨</div>
+        </footer>
+    </div>
+</body>
+</html>
